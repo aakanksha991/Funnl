@@ -1,0 +1,285 @@
+// bower:scss
+// endbower
+
+@import '../bower_components/uikit/scss/uikit-mixins.scss';
+@import '../bower_components/uikit/scss/uikit.scss';
+@import 'variables.scss';
+@import 'fonts.scss';
+
+/* COMMON STYLES */
+
+html{
+    height: 100%;
+}
+body {
+    background: #ccc;
+    font-family: 'Open Sans', sans-serif !important;
+    /* font-family: 'Open','Helvetica Neue', Helvetica, Arial, sans-serif; */
+    color: #FFF;
+    height: 100%;
+}
+a{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+
+/* HERO BLOCK */
+
+.hero-blk{
+    background: url('/images/bg-site.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 20px;
+    text-align: center;
+    .hero-content{
+        margin-top: 150px;
+    }
+    .hero-title{
+        font-weight: light;
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    .hero-desc{
+        font-size: 30px;
+        line-height: 150%;
+    }
+}
+
+.hp-logo{
+    background: url('/images/hp-logo.png');
+    -webkit-background-size: 100px;
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.hero-nav{
+    height: 75px;
+    background: transparent;
+    font-size: 25px;
+    /* padding: 15px 0; */
+    .uk-navbar-brand{
+        color: #eddc5b;
+        line-height: 75px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    ul.uk-navbar-nav a{
+        font-size: 20px;
+        color: #eddc5b;
+        line-height: 75px;
+        height: 75px;
+        &:hover{
+            color: #eddc5b;
+        }
+        &:active{
+            border-top: 5px solid yellow;
+        }
+    }
+}
+
+.hero-overlay{
+    position: absolute;
+    background: #333;
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+
+@keyframes bounce {
+    0%   {
+        bottom: 12%;
+    }
+    50% {
+        bottom: 9%;
+    }
+    100% {
+        bottom: 12%;
+    }
+}
+
+
+.scroll-more{
+    font-size: 35px;
+    position: absolute;
+    bottom: 10%;
+    left: 49%;
+    /* right: 50%; */
+    color: #FFF;
+    animation: bounce 7s infinite; 
+    z-index: 999;
+}
+
+.learn-more{
+    font-size: 23px;
+    color: #2b4349;
+    background: rgba(235,245,249,1);
+    position: absolute;
+    bottom: 10%;
+    width: 180px;
+    margin-left: -90px;
+    /* left: 0; */
+    /* right: 0; */
+    /* width: 180px; */
+    /* margin: 0 auto; */
+    /* display: inline-block; */
+    margin-top: 10px;
+    z-index: 999;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+
+
+/* FEATURE BLOCK */
+
+.feature-blk{
+    background: linear-gradient(90deg,#fff 0,#f1f7f9 100%);
+    /* background: #fdfeff; */
+    padding: 100px 0;
+    position: relative;
+}
+
+.device-container{
+    position: relative;
+    .iphone{
+        position: absolute;
+        width: 370px;
+        height: 753px;
+        top: 37px;
+        z-index: 10;
+        overflow: visible;
+        .device-front{
+            background: url("/images/iphone-sprite.png") no-repeat;
+            background-position: -592px -72px;
+            background-size: 2007px 919px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; 
+            .screen{
+                position: absolute;
+                top: 117px;
+                left: 39px;
+                width: 291px;
+                height: 517px;
+                overflow: hidden;
+                .app{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    overflow: hidden;
+                    .project{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        overflow: hidden;
+                        .photos{
+                            background: url('/images/img-sprite.png') top center no-repeat;
+                            background-position: 0px 0px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            -webkit-background-size: 100%;
+                            background-size: 100%;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+
+
+.feature-content{
+    margin-bottom: 50px !important;
+    .f-title{
+        color: #24acbb;
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+    .f-subtitle{
+        color: #f06a5d;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .f-icon{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .f-desc{
+        font-size: 16px;
+        color: #54656d;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.card{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    bottom: 0;
+    width: 292px;
+    overflow: hidden;
+    .card-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url('/images/card.png') top center no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* DOWNLOADS */
+.download-blk{
+    padding: 100px 0;
+    background: #FFF;
+    color: #444;
+    text-align: center;
+    .download-title{
+        color: #24acbb;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .download-btn{
+        border-radius: 5px;
+        font-size: 23px;
+        color: #ebf5f9;
+        padding:10px 20px;
+        background: rgba(16,45,52,1);
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background: #101f34;
+    color: #b4bfc8;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
