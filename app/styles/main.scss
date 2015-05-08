@@ -3,6 +3,7 @@
 
 @import '../bower_components/uikit/scss/uikit-mixins.scss';
 @import '../bower_components/uikit/scss/uikit.scss';
+@import '../bower_components/uikit/scss/components/sticky.scss';
 @import 'variables.scss';
 @import 'fonts.scss';
 
@@ -23,16 +24,20 @@ a{
 }
 
 
+
 /* HERO BLOCK */
 
 .hero-blk{
-    background: url('/images/bg-site.png') no-repeat center;
+    background: url('/images/bg-new.png') no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
-    padding-top: 20px;
+    background-color: rgba(0,0,0,1);
+    /* padding-top: 20px; */
     text-align: center;
     .hero-content{
-        margin-top: 150px;
+        margin-top: 27%;
+        margin-bottom: 10%;
+        font-weight: 100;
     }
     .hero-title{
         font-weight: light;
@@ -45,13 +50,22 @@ a{
     }
 }
 
-.hp-logo{
-    background: url('/images/hp-logo.png');
-    -webkit-background-size: 100px;
-    background-size: 100px;
-    height: 100px;
-    width: 100px;
-    margin-left: 20px;
+.funnl-logo div{
+    background: url('/images/funnl-logo.png');
+    -webkit-background-size: 60px;
+    background-size: 60px;
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+a.site-name{
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 18px;
+    text-decoration: none;
+    /* color: $funnl-blue; */
 }
 
 .hero-nav{
@@ -79,19 +93,32 @@ a{
     }
 }
 
-.hero-overlay{
-    position: absolute;
-    background: #333;
-    opacity: 0.5;
-    position: absolute;
-    top:0;
-    left:0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+.download-btns{
+    a{
+        border-radius: 5px;
+        padding: 7px 20px;
+        font-size: 17px;
+        color: #102F34;
+        background: #ebf5f9;
+        text-align: left;
+        line-height: 150%;
+        &:first-child{
+            margin-right: 10px;
+        }
+        &:last-child{
+            margin-left: 10px;
+        }
+        .device-os{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        i{
+            float: left;
+            font-size: 45px;
+            margin-right: 10px;
+        }
+    }
 }
-
-
 
 @keyframes bounce {
     0%   {
@@ -140,10 +167,18 @@ a{
 /* FEATURE BLOCK */
 
 .feature-blk{
-    background: linear-gradient(90deg,#fff 0,#f1f7f9 100%);
     /* background: #fdfeff; */
-    padding: 100px 0;
+    /* padding: 80px 0; */
     position: relative;
+    /* height: 50vh; */
+    &:nth-child(odd){
+        background: -webkit-linear-gradient(left, #fff 0%, #f1f7f9 100%);
+        background: -o-linear-gradient(left, #fff 0%, #f1f7f9 100%);
+        background: linear-gradient(to right, #fff 0%, #f1f7f9 100%);        
+    }
+    &:nth-child(even){
+        background: #fff;
+    }
 }
 
 .device-container{
@@ -156,9 +191,14 @@ a{
         z-index: 10;
         overflow: visible;
         .device-front{
-            background: url("/images/iphone-sprite.png") no-repeat;
+            /* background: url("/images/iphone-sprite.png") no-repeat;
             background-position: -592px -72px;
-            background-size: 2007px 919px;
+            background-size: 2007px 919px; */
+            background: url("/images/iphone6.png") no-repeat top center;
+            height: 700px;
+            width: 340px;
+            -webkit-background-size: 100%;
+            background-size: 100%;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -166,10 +206,10 @@ a{
             right: 0; 
             .screen{
                 position: absolute;
-                top: 117px;
-                left: 39px;
-                width: 291px;
-                height: 517px;
+                top: 85px;
+                left: 24px;
+                width: 293px;
+                height: 521px;
                 overflow: hidden;
                 .app{
                     position: absolute;
@@ -205,12 +245,28 @@ a{
     }
 }
 
+.device-white{
+    background: url("/images/iphone-sprite.png") no-repeat;
+    background-position: -1022px -72px;
+    background-size: 2007px 919px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
+.content-1{
+    background: linear-gradient(90deg,#fff 0,#f1f7f9 100%);
+}
 
+.content-2{
+    background: #fff;
+}
 .feature-content{
-    margin-bottom: 50px !important;
+    padding: 50px 0;
     .f-title{
-        color: #24acbb;
+        color: $funnl-blue;
         font-size: 28px;
         margin-bottom: 35px;
     }
@@ -236,9 +292,9 @@ a{
 .card{
     position: absolute;
     top: 0;
-    left: 60px;
+    left: 59px;
     bottom: 0;
-    width: 292px;
+    width: 294px;
     overflow: hidden;
     .card-img{
         position: absolute;
@@ -261,15 +317,12 @@ a{
     color: #444;
     text-align: center;
     .download-title{
-        color: #24acbb;
-        font-size: 25px;
+        color: $funnl-blue;
+        font-size: 26px;
         margin-bottom: 30px;
     }
-    .download-btn{
-        border-radius: 5px;
-        font-size: 23px;
+    .download-btns a{
         color: #ebf5f9;
-        padding:10px 20px;
         background: rgba(16,45,52,1);
     }
 }
@@ -283,3 +336,12 @@ footer{
     line-height: 100px;
     text-align: center;
 }
+
+/* HEADER */
+.funnl-nav{
+    background: rgba(36,172,187,0.8);
+    padding: 10px 0;
+    text-align: left;
+    opacity:0;
+}
+

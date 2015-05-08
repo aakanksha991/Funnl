@@ -28,44 +28,51 @@
         
         <div class="hero-blk uk-height-viewport" id="home">
             <div class="uk-container uk-container-center">
-                <!-- <div class="hp-logo"></div> -->
-                <div class="hero-content">
+                <div class="hero-content"  data-uk-scrollspy="{cls:'uk-animation-fade',delay:100}">
                     <div class="hero-title">HP FUNNL</div>
                     <div class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In optio aliquam beatae autem similique dicta odio aliquid ullam sunt? Recusandae minima odit adipisci deserunt magni aliquid quasi harum dolores, sapiente.</div>
                 </div>
-                <a class="uk-button learn-more" href="#feature" data-uk-smooth-scroll>Learn More</a>
+                <div class="download-btns" data-uk-scrollspy="{cls:'uk-animation-scale-up',delay:100}">
+                    <a href="" class="uk-button"><i class="uk-icon-android"></i>Download for <br><span class="device-os">Android</span></a>
+                    <a href="" class="uk-button"><i class="uk-icon-apple"></i>Download for <br><span class="device-os">iOS</span></a>
+                </div>
+                <!-- <a class="uk-button learn-more" href="#feature" data-uk-smooth-scroll>Learn More</a> -->
             </div>
-            <!-- <a href="#feature"><i class="uk-icon-chevron-down scroll-more"></i></a> -->
-            <!-- <div class="learn-more">
-                <a href="#feature">Learn More</a>
-            </div> -->
-            <!-- <div class="hero-overlay"></div> -->
         </div>
 
-        <div class="feature-blk" id="feature">
+        <div class="uk-container uk-container-center">
+            <div class="uk-width-1-2 device-container">
+                <div class="iphone" data-0="position:absolute" data-900="position:fixed; top:100px" data-2800="position:absolute" >
+                    <!-- <div class="device-white"></div> -->
+                    <div class="device-front">
+                      <div class="screen">
+                          <div class="app">
+                              <div class="project">
+                                  <div class="photos" 
+                                  data-900="background-position: 0px 0px;" 
+                                  data-1200="background-position: 0px -350px;"
+                                  >
+                                  </div>
+                              </div>
+                              <div class="card" data-1200="opacity: 0; transform: translateX(0px);" data-1400="opacity: 1; transform: translateX(-60px);" style="opacity: 0; -webkit-transform: translateX(0px); transform: translateX(0px);">
+                                  <div class="card-img"></div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-blk uk-height-viewport" id="feature">
+            <nav class="uk-navbar funnl-nav uk-navbar-attached" data-uk-sticky data-0="opacity:0" data-25p="opacity:0" data-50p="opacity:0" data-75p="opacity:0" data-top="opacity: 1" data-smooth-scrolling="">
+                <div class="uk-container uk-container-center">
+                    <a href="#home" class="funnl-logo" data-uk-smooth-scroll><div></div></a>
+                    <a href="#home" class="site-name" data-uk-smooth-scroll data-0="color: rgb(36,172,187)" data-1200="color: rgb(255,255,255)">HP Funnl</a>
+                </div>
+            </nav>
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
-                    <div class="uk-width-1-2 device-container">
-                        <div class="iphone" data-0="position:absolute" data-900="position:fixed" data-1400="position:absolute" >
-                            <div class="device-front">
-                                <div class="screen">
-                                    <div class="app">
-                                        <div class="project">
-                                            <div class="photos" 
-                                            data-900="background-position: 0px 0px;" 
-                                            data-1100="background-position: 0px -350px;"
-                                            >
-                                            </div>
-                                        </div>
-                                        <div class="card" data-1100="opacity: 0; transform: translateX(0px);" data-1400="opacity: 1; transform: translateX(-60px);" style="opacity: 0; -webkit-transform: translateX(0px); transform: translateX(0px);">
-                                            <div class="card-img"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-width-1-2">
+                    <div class="uk-width-1-2 uk-push-1-2">
                         <div class="feature-content">
                            <div class="f-title">Lorem Ipsum</div>
                            <div class="f-subtitle"><i class="f-icon uk-icon-dashboard"></i>Sit Amet</div>
@@ -76,6 +83,32 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sed, voluptatem. Asperiores sint doloremque tenetur quod, quasi dicta. Quis vel atque praesentium architecto consequuntur. Eum, aliquid, quam. Aperiam sapiente, iste. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae id ad perferendis, velit. Vel nihil tenetur minus mollitia dolore, similique, facilis ea itaque consectetur. Enim corrupti cupiditate earum qui ipsa. 
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-blk uk-height-viewport">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2 uk-push-1-2">
+                        <div class="feature-content">
+                           <div class="f-title">Lorem Ipsum</div>
+                           <div class="f-subtitle"><i class="f-icon uk-icon-dashboard"></i>Sit Amet</div>
+                           <div class="f-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sed, voluptatem. Asperiores sint doloremque tenetur quod, quasi dicta. Quis vel atque praesentium architecto consequuntur. Eum, aliquid, quam. Aperiam sapiente, iste. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae id ad perferendis, velit. Vel nihil tenetur minus mollitia dolore, similique, facilis ea itaque consectetur. Enim corrupti cupiditate earum qui ipsa. </div>
+                            <div class="f-subtitle"><i class="f-icon uk-icon-dashboard"></i>Sit Amet</div>
+                            <div class="f-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sed, voluptatem. Asperiores sint doloremque tenetur quod, quasi dicta. Quis vel atque praesentium architecto consequuntur. Eum, aliquid, quam. Aperiam sapiente, iste. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae id ad perferendis, velit. Vel nihil tenetur minus mollitia dolore, similique, facilis ea itaque consectetur. Enim corrupti cupiditate earum qui ipsa. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-blk">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2 uk-push-1-2">
                         <div class="feature-content">
                            <div class="f-title">Lorem Ipsum</div>
                            <div class="f-subtitle"><i class="f-icon uk-icon-dashboard"></i>Sit Amet</div>
@@ -92,7 +125,10 @@
         </div>
         <div class="download-blk" id="downloads">
             <div class="download-title">Download Funnl for free from the HP store</div>
-            <button class="uk-button download-btn" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">Download</button>
+            <div class="download-btns" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                <a href="" class="uk-button"><i class="uk-icon-android"></i>Download for <br><span class="device-os">Android</span></a>
+                <a href="" class="uk-button"><i class="uk-icon-apple"></i>Download for <br><span class="device-os">iOS</span></a>
+            </div>
         </div>
         <footer>
             <div class="uk-container uk-container-center">
@@ -120,6 +156,7 @@
         <!-- bower:js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/uikit/js/uikit.min.js"></script>
+        <script src="/bower_components/uikit/js//components/sticky.min.js"></script>
         <script src="scripts/skrollr.min.js"></script>
         <script>
             var s = skrollr.init();
