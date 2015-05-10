@@ -1,0 +1,367 @@
+
+/* COMMON STYLES */
+
+html{
+    height: 100%;
+}
+body {
+    background: #ccc;
+    font-family: 'FiraSans', sans-serif !important;
+    /* font-family: 'Open','Helvetica Neue', Helvetica, Arial, sans-serif; */
+    color: #FFF;
+    height: 100%;
+}
+a{
+    font-family: 'FiraSans', sans-serif !important;
+}
+
+
+
+/* HERO BLOCK */
+
+.hero-blk{
+    background: url('../images/bg-new.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,1);
+    /* padding-top: 20px; */
+    text-align: center;
+    font-size: 18px;
+    .hero-content{
+        max-width:1200px;
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding: 20px 25px 0 25px;
+        position:absolute;
+        left:0;
+        right:0;
+        margin: 0 auto;
+        top: 50%;
+        -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        -o-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+    .hero-title{
+        font-weight: normal;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .hero-subtitle{
+        font-size: 25px;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+    .download-btns{
+        margin-top: 20px;
+        /* position: absolute; */
+        /* bottom: 100px; */
+    }
+}
+
+.funnl-logo div{
+    background: url('../images/funnl-logo.png');
+    -webkit-background-size: 60px;
+    background-size: 60px;
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+a.site-name{
+    margin: 0 10px;
+    font-size: 26px;
+    /* color: $funnl-blue; */
+}
+
+.hero-nav{
+    height: 75px;
+    background: transparent;
+    font-size: 25px;
+    /* padding: 15px 0; */
+    .uk-navbar-brand{
+        color: #eddc5b;
+        line-height: 75px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    ul.uk-navbar-nav a{
+        font-size: 20px;
+        color: #eddc5b;
+        line-height: 75px;
+        height: 75px;
+        &:hover{
+            color: #eddc5b;
+        }
+        &:active{
+            border-top: 5px solid yellow;
+        }
+    }
+}
+
+.download-btns{
+    a{
+        border-radius: 5px;
+        padding: 7px 15px;
+        font-size: 16px;
+        color: #102F34;
+        background: #ebf5f9;
+        text-align: left;
+        line-height: 150%;
+        &:first-child{
+            margin-right: 10px;
+        }
+        &:last-child{
+            margin-left: 10px;
+        }
+        .device-os{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        i{
+            float: left;
+            font-size: 38px;
+            margin-right: 12px;
+        }
+    }
+}
+
+@keyframes bounce {
+    0%   {
+        bottom: 12%;
+    }
+    50% {
+        bottom: 9%;
+    }
+    100% {
+        bottom: 12%;
+    }
+}
+
+
+.scroll-more{
+    font-size: 35px;
+    position: absolute;
+    bottom: 10%;
+    left: 49%;
+    /* right: 50%; */
+    color: #FFF;
+    animation: bounce 7s infinite; 
+    z-index: 999;
+}
+
+.learn-more{
+    font-size: 23px;
+    color: #2b4349;
+    background: rgba(235,245,249,1);
+    position: absolute;
+    bottom: 10%;
+    width: 180px;
+    margin-left: -90px;
+    /* left: 0; */
+    /* right: 0; */
+    /* width: 180px; */
+    /* margin: 0 auto; */
+    /* display: inline-block; */
+    margin-top: 10px;
+    z-index: 999;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+
+
+/* FEATURE BLOCK */
+
+.feature-blk{
+    /* background: #fdfeff; */
+    /* padding: 80px 0; */
+    position: relative;
+    /* height: 50vh; */
+    &:nth-child(odd){
+        background: -webkit-linear-gradient(left, #fff 0%, #f1f7f9 100%);
+        background: -o-linear-gradient(left, #fff 0%, #f1f7f9 100%);
+        background: linear-gradient(to right, #fff 0%, #f1f7f9 100%);        
+    }
+    &:nth-child(even){
+        background: #fff;
+    }
+}
+
+.device-container{
+    position: relative;
+    .iphone{
+        position: absolute;
+        width: 370px;
+        height: 753px;
+        top: 37px;
+        z-index: 10;
+        overflow: visible;
+        .device-front{
+            /* background: url("/images/iphone-sprite.png") no-repeat;
+            background-position: -592px -72px;
+            background-size: 2007px 919px; */
+            background: url("../images/iphone6.png") no-repeat top center;
+            height: 700px;
+            width: 340px;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; 
+            .screen{
+                position: absolute;
+                top: 85px;
+                left: 24px;
+                width: 293px;
+                height: 521px;
+                overflow: hidden;
+                .app{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    overflow: hidden;
+                    .project{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        overflow: hidden;
+                        .photos{
+                            background: url('../images/img-sprite.png') top center no-repeat;
+                            background-position: 0px 0px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            -webkit-background-size: 100%;
+                            background-size: 100%;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+.device-white{
+    background: url("../images/iphone-sprite.png") no-repeat;
+    background-position: -1022px -72px;
+    background-size: 2007px 919px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content-1{
+    background: linear-gradient(90deg,#fff 0,#f1f7f9 100%);
+}
+
+.content-2{
+    background: #fff;
+}
+.feature-content{
+    padding: 50px 0;
+    .f-title{
+        color: $funnl-blue;
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .f-subtitle{
+        color: #f06a5d;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .f-icon{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .f-desc{
+        font-size: 15px;
+        color: #54656d;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.card{
+    position: absolute;
+    top: 0;
+    left: 59px;
+    bottom: 0;
+    width: 294px;
+    overflow: hidden;
+    .card-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url('../images/card.png') top center no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* DOWNLOADS */
+.download-blk{
+    padding: 60px 0;
+    background: #FFF;
+    color: #444;
+    text-align: center;
+    .download-title{
+        color: $funnl-blue;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .download-btns a{
+        color: #ebf5f9;
+        background: rgba(16,45,52,1);
+    }
+}
+
+.testimonial-blk{
+    padding: 60px 0;
+    background: #FFF;
+    color: #444;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    background: #101f34;
+    color: #b4bfc8;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+/* HEADER */
+.funnl-nav{
+    background: rgba(237,220,91,0.8);
+    padding: 10px 0;
+    text-align: left;
+    opacity:0;
+    color: $funnl-blue;
+    height: 80px;
+    a{
+        color: $funnl-blue;
+        text-decoration: none;
+        line-height: 40px;
+    }
+}
+

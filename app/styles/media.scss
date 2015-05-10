@@ -1,0 +1,37 @@
+@media screen and (max-width: 480px) {
+	.hero-content{
+		font-size: 16px;
+		.hero-title{
+			font-size: 35px;
+		}
+		.hero-subtitle{
+			font-size: 20px;
+		}
+	}
+	.download-btns{
+		a{
+			margin-bottom: 20px;
+			padding: 5px 12px;;
+			font-size: 15px;
+			&:first-child{
+				margin-right: 0;
+			}
+			&:last-child{
+				margin-left: 0;
+			}
+		}
+		.device-os{
+			font-size: 18px;
+		}
+		i{
+			font-size: 30px;
+		}
+	}
+}
+
+@media screen and (max-width:980px){
+	.hero-content{
+		padding: 0 25px;
+		max-width: 980px; 
+	}
+}
