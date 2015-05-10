@@ -30,17 +30,18 @@
             <div class="uk-container uk-container-center">
                 <div class="hero-content"  data-uk-scrollspy="{cls:'uk-animation-fade',delay:100}">
                     <div class="hero-title">HP FUNNL</div>
-                    <div class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In optio aliquam beatae autem similique dicta odio aliquid ullam sunt? Recusandae minima odit adipisci deserunt magni aliquid quasi harum dolores, sapiente.</div>
+                    <div class="hero-desc">Bite-sized content on the go!</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nihil debitis et, eum recusandae dolorum fugiat esse, quidem quis facere a eaque, ut vel deserunt quam fugit eius ab neque?</div>
                 </div>
                 <div class="download-btns" data-uk-scrollspy="{cls:'uk-animation-scale-up',delay:100}">
                     <a href="" class="uk-button"><i class="uk-icon-android"></i>Download for <br><span class="device-os">Android</span></a>
                     <a href="" class="uk-button"><i class="uk-icon-apple"></i>Download for <br><span class="device-os">iOS</span></a>
                 </div>
-                <!-- <a class="uk-button learn-more" href="#feature" data-uk-smooth-scroll>Learn More</a> -->
+                <!-- <a class="uk-button learn-more" href="#features" data-uk-smooth-scroll>Learn More</a> -->
             </div>
         </div>
 
-        <div class="uk-container uk-container-center">
+        <div class="uk-container uk-container-center uk-hidden-small">
             <div class="uk-width-1-2 device-container">
                 <div class="iphone" data-0="position:absolute" data-900="position:fixed; top:100px" data-2800="position:absolute" >
                     <!-- <div class="device-white"></div> -->
@@ -63,18 +64,37 @@
                 </div>
             </div>
         </div>
-        <div class="feature-blk uk-height-viewport" id="feature">
+        <div class="feature-blk uk-height-viewport" id="features">
             <nav class="uk-navbar funnl-nav uk-navbar-attached" data-uk-sticky data-0="opacity:0" data-25p="opacity:0" data-50p="opacity:0" data-75p="opacity:0" data-top="opacity: 1" data-smooth-scrolling="">
                 <div class="uk-container uk-container-center">
-                    <a href="#home" class="funnl-logo" data-uk-smooth-scroll><div></div></a>
-                    <a href="#home" class="site-name" data-uk-smooth-scroll data-0="color: rgb(36,172,187)" data-1200="color: rgb(255,255,255)">HP Funnl</a>
+                    <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                    <div class="uk-clearfix">
+                        <div class="uk-float-left">
+                            <a href="#home" class="funnl-logo uk-hidden-small" data-uk-smooth-scroll><div></div></a>
+                            <a href="#home" class="site-name" data-uk-smooth-scroll>HP Funnl</a>
+                        </div>
+                        <div class="uk-float-right uk-hidden-small">
+                            <a href="#features" data-uk-smooth-scroll>Features</a>
+                            <a href="#downloads" data-uk-smooth-scroll>Download</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
+            <div id="tm-offcanvas" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar uk-offcanvas-bar-show">
+                    <ul class="uk-nav uk-nav-offcanvas" data-uk-nav="">
+                        <li class="offcanvas-menu" id="off-home"><a href="#home" data-uk-smooth-scroll="">Home</a></li>
+                        <li class="offcanvas-menu" id="off-features"><a href="#features" data-uk-smooth-scroll="">Features</a></li>
+                        <li class="offcanvas-menu" id="off-testimonials"><a href="#testimonials" data-uk-smooth-scroll="">Testimonials</a></li>
+                        <li class="offcanvas-menu" id="off-downloads"><a href="#downloads" data-uk-smooth-scroll="">Downloads</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
-                    <div class="uk-width-1-2 uk-push-1-2">
+                    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 uk-push-1-2">
                         <div class="feature-content">
-                           <div class="f-title">Lorem Ipsum</div>
+                           <div class="f-title">Discover</div>
                            <div class="f-subtitle"><i class="f-icon uk-icon-dashboard"></i>Sit Amet</div>
                            <div class="f-desc">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sed, voluptatem. Asperiores sint doloremque tenetur quod, quasi dicta. Quis vel atque praesentium architecto consequuntur. Eum, aliquid, quam. Aperiam sapiente, iste. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae id ad perferendis, velit. Vel nihil tenetur minus mollitia dolore, similique, facilis ea itaque consectetur. Enim corrupti cupiditate earum qui ipsa. </div>
@@ -92,7 +112,7 @@
                 <div class="uk-grid">
                     <div class="uk-width-1-2 uk-push-1-2">
                         <div class="feature-content">
-                           <div class="f-title">Lorem Ipsum</div>
+                           <div class="f-title">Engage</div>
                            <div class="f-subtitle"><i class="f-icon uk-icon-dashboard"></i>Sit Amet</div>
                            <div class="f-desc">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sed, voluptatem. Asperiores sint doloremque tenetur quod, quasi dicta. Quis vel atque praesentium architecto consequuntur. Eum, aliquid, quam. Aperiam sapiente, iste. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae id ad perferendis, velit. Vel nihil tenetur minus mollitia dolore, similique, facilis ea itaque consectetur. Enim corrupti cupiditate earum qui ipsa. </div>
@@ -110,7 +130,7 @@
                 <div class="uk-grid">
                     <div class="uk-width-1-2 uk-push-1-2">
                         <div class="feature-content">
-                           <div class="f-title">Lorem Ipsum</div>
+                           <div class="f-title">Personalize</div>
                            <div class="f-subtitle"><i class="f-icon uk-icon-dashboard"></i>Sit Amet</div>
                            <div class="f-desc">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sed, voluptatem. Asperiores sint doloremque tenetur quod, quasi dicta. Quis vel atque praesentium architecto consequuntur. Eum, aliquid, quam. Aperiam sapiente, iste. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae id ad perferendis, velit. Vel nihil tenetur minus mollitia dolore, similique, facilis ea itaque consectetur. Enim corrupti cupiditate earum qui ipsa. </div>
@@ -122,6 +142,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="testimonial-blk" id="testimonials">
+            Testimonials will come here
         </div>
         <div class="download-blk" id="downloads">
             <div class="download-title">Download Funnl for free from the HP store</div>
