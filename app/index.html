@@ -64,18 +64,22 @@
             </div>
         </div>
         <div class="feature-blk uk-height-viewport" id="features">
-            <nav class="uk-navbar funnl-nav uk-navbar-attached" data-uk-sticky data-0="opacity:0" data-25p="opacity:0" data-50p="opacity:0" data-75p="opacity:0" data-top="opacity: 1" data-smooth-scrolling="">
+            <nav class="uk-navbar funnl-nav uk-navbar-attached" data-uk-sticky data-smooth-scrolling="">
                 <div class="uk-container uk-container-center">
                     <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
                     <div class="uk-clearfix">
-                        <div class="uk-float-left">
+                        <div class="uk-float-left site-brand">
                             <a href="#home" class="funnl-logo uk-hidden-small" data-uk-smooth-scroll><div></div></a>
-                            <a href="#home" class="site-name" data-uk-smooth-scroll>HP Funnl</a>
+                            <a href="#home" class="site-name uk-navbar-brand" data-uk-smooth-scroll>HP Funnl</a>
                         </div>
-                        <div class="uk-float-right uk-hidden-small">
+                        <ul class="uk-navbar-nav uk-hidden-small uk-navbar-flip" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+                            <li><a href="#features" data-uk-smooth-scroll>Features</a></li>
+                            <li><a href="#downloads" data-uk-smooth-scroll>Download</a></li>
+                        </ul>
+                        <!-- <div class="uk-float-right uk-hidden-small">
                             <a href="#features" data-uk-smooth-scroll>Features</a>
                             <a href="#downloads" data-uk-smooth-scroll>Download</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </nav>
@@ -84,7 +88,6 @@
                     <ul class="uk-nav uk-nav-offcanvas" data-uk-nav="">
                         <li class="offcanvas-menu" id="off-home"><a href="#home" data-uk-smooth-scroll="">Home</a></li>
                         <li class="offcanvas-menu" id="off-features"><a href="#features" data-uk-smooth-scroll="">Features</a></li>
-                        <li class="offcanvas-menu" id="off-testimonials"><a href="#testimonials" data-uk-smooth-scroll="">Testimonials</a></li>
                         <li class="offcanvas-menu" id="off-downloads"><a href="#downloads" data-uk-smooth-scroll="">Downloads</a></li>
                     </ul>
                 </div>

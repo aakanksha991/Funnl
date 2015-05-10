@@ -61,18 +61,13 @@ a{
 
 .funnl-logo div{
     background: url('../images/funnl-logo.png');
-    -webkit-background-size: 60px;
-    background-size: 60px;
-    height: 60px;
-    width: 60px;
+    -webkit-background-size: 50px;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
     float: left;
 }
 
-a.site-name{
-    margin: 0 10px;
-    font-size: 26px;
-    /* color: $funnl-blue; */
-}
 
 .hero-nav{
     height: 75px;
@@ -196,6 +191,7 @@ a.site-name{
         top: 37px;
         z-index: 10;
         overflow: visible;
+        top:200px;
         .device-front{
             /* background: url("/images/iphone-sprite.png") no-repeat;
             background-position: -592px -72px;
@@ -352,16 +348,46 @@ footer{
 
 /* HEADER */
 .funnl-nav{
-    background: rgba(237,220,91,0.8);
-    padding: 10px 0;
+    background: rgba(237,220,91,0.9);
     text-align: left;
-    opacity:0;
+    /* opacity:0; */
+    padding: 15px 0;
     color: $funnl-blue;
-    height: 80px;
-    a{
+    a{  
+        height: 50px;
         color: $funnl-blue;
         text-decoration: none;
-        line-height: 40px;
+        font-size: 20px;
+        margin-right: 10px;
+        &:hover{
+            color: $funnl-blue;
+        }
+    }
+    ul li a{
+        height: 50px;
+        font-size: 20px;
+        color: $funnl-blue;
+    }
+    .site-name{
+        font-size: 26px;
+    }
+    .uk-navbar-nav > li.uk-active > a{
+        background-color: transparent;
+        color: $funnl-blue;
+    }
+    .uk-navbar-nav > li:hover > a{
+        background-color: transparent;
+        color: $funnl-blue;
     }
 }
 
+.uk-offcanvas-bar{
+    background: $funnl-blue;
+    width: 200px;
+    padding: 10px 5px 0px 5px;
+    .uk-nav-offcanvas > li > a{
+        color: rgb(237, 220, 91);
+        font-size: 17px;
+        border-bottom: 1px solid  rgba(237, 220, 91, 0.2);
+    }
+}
