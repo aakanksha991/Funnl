@@ -1,40 +1,46 @@
 @media screen and (max-width: 480px) {
-	.hero-content{
-		font-size: 16px;
-		.hero-title{
-			font-size: 35px;
+	.hero-blk h1{
+		margin-top: 0;
+		font-size: 45px;
+	}
+	.hero-blk{
+		.uk-container{
+			padding: 0 15px;
 		}
-		.hero-subtitle{
-			font-size: 20px;
+		text-align: center;
+		.hero-desc{
+			line-height: 22px;
 		}
+		p {
+			margin-top: 15px;
+	        line-height: 22px;
+	        font-size: 16px;
+    	}
+	    .tagline{
+	        font-size: 20px;
+	    }
+	    .download-blk{
+	    	text-align: center;
+	    }
 	}
 	.download-btns{
 		a{
-			margin-bottom: 20px;
-			padding: 5px 12px;;
-			font-size: 15px;
-			&:first-child{
-				margin-right: 0;
-			}
-			&:last-child{
-				margin-left: 0;
-			}
-		}
-		.device-os{
-			font-size: 18px;
+			width: 162px;
+			font-size: 17px;
+			padding: 0px 12px;
+			margin-bottom: 10px;
 		}
 		i{
 			font-size: 30px;
 		}
-	}
-	.funnl-nav{
-		opacity: 0.7;
-	}
-}
-
-@media screen and (max-width:980px){
-	.hero-content{
-		padding: 0 25px;
-		max-width: 980px; 
+		a:first-child{
+			margin-right: 0;
+		}
+		a:last-child{
+			margin-left: 0;
+		}
+		.device-os{
+			font-size: 13px;
+		}
 	}
 }
