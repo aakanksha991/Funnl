@@ -11,6 +11,7 @@ body {
     /* font-family: 'Open','Helvetica Neue', Helvetica, Arial, sans-serif; */
     color: #FFF;
     height: 100%;
+    overflow: auto;
 }
 a{
     font-family: 'Fira Sans', sans-serif !important;
@@ -28,7 +29,8 @@ a{
     /* padding-top: 20px; */
     text-align: left;
     .hero-desc{
-        line-height: 28px;
+        /*line-height: 28px;*/
+
     }
     .uk-vertical-align-middle {
         width:100%;
@@ -49,11 +51,18 @@ a{
         font-weight: 300;
         /* font-family: 'Open','Helvetica Neue', Helvetica, Arial, sans-serif; */
         letter-spacing: 1px;
-        line-height: 40px;
+        line-height: 34px;
+        color: #ccc;
+        span {
+            color: #24acbb;
+            font-weight: 400;
+        }
     }
     .tagline{
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 300;
+        margin-top: -10px;
+        color: #f2e47b;
     }
     .download-blk{
         text-align: left;
@@ -62,14 +71,20 @@ a{
     }
 }
 
+.right-blk {
+    margin-left: 10px;
+    padding: 20px 30px 20px 40px;
+    border-left: 1px solid #999;
+}
 
 .funnl-logo{
-    background: url('../images/funnl-logo.png');
+    /*background: url('../images/funnl-logo.png');*/
     -webkit-background-size: 40px;
     background-size: 40px;
-    height: 40px;
-    width: 40px;
+    /*height: 40px;*/
+    /*width: 40px;*/
     /* float: left; */
+    padding-top: 80px;
 }
 .logo-mobile{
     display: block;
@@ -77,14 +92,53 @@ a{
     margin-bottom: 20px;
 }
 
+
+.funnl-lg {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.mob-view {
+    .logo-txt {
+        font-size: 30px;
+        color: #f2e47b;
+        margin:10px 0px 20px;
+    }  
+    p.tagline {
+        font-weight: 300;
+        font-size: 14px;
+    } 
+    p.desc {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .download-btns {
+        margin-top:30px;
+        margin-bottom: 40px;
+        a {
+            margin:6px;
+            font-size: 14px;
+            padding:8px 6px;
+            text-align: center;
+        }
+    }
+}
+
 .download-btns{
     margin-top: 20px;
+    .android:hover {
+        color: #A4C639;
+        border:1px solid #A4C639;
+        background: none;
+    }
     a{
-        font-size: 20px;
+        font-size: 16px;
+        border:1px solid #fff;
         border-radius: 5px;
-        padding: 4px 15px;
-        color: #102F34;
-        background: #ebf5f9;
+        vertical-align: middle;
+        padding: 10px 15px;
+        color: #fff;
+        background: none;
         text-align: left;
         font-weight: 400;;
         /* line-height: 150%; */
@@ -96,9 +150,10 @@ a{
         }
         i{
             vertical-align: top;
-            float: left;
+            /*float: left;*/
             font-size: 36px;
             margin-right: 10px;
+            margin-top: -5px;
         }
         div{
             display: inline-block;
@@ -320,7 +375,7 @@ footer{
 }
  */
 .hp-logo{
-    background: url('../images/hp-blue-logo.png');
+    background: url('../images/hp-black-logo.png');
     height: 40px;
     width: 40px;
     -webkit-background-size: 40px;
@@ -358,4 +413,14 @@ footer{
         color: #ebf5f9;
         background: rgba(16,45,52,1);
     }
+}
+.footerhp {
+    text-align: right;
+    font-size: 13px;
+    color: #999;
+    padding:40px 5px 10px 0px;
+}
+.dktop {
+    position: absolute;right: 20px;
+    bottom:0px;
 }
